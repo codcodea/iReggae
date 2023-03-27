@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="styles.css?rnd=12345" />
+		<title>iReggae client</title>
+	</head>
+	<body>
+
+    <!-- individual chat clients -->
+
+		<div class="container">
+			<header>
+				<h2 id="head">iReggae</h2>
+				<p id="subhead">/play /stop /close</p>
+			</header>
+			<main>
+				<section class="message-container"></section>
+				<form class="input-container">
+					<input autocomplete="off" class="textarea" type="text" id="message" />
+					<button type="submit" class="send-button" id="submit">Send</button>
+				</form>
+			</main>
+		</div>
+
+		<!-- html templates for messages -->
+
+		<template id="template-message-in">
+			<article class="message left">
+				<div class="message-text">Placeholder message</div>
+				<div class="message-info">
+					<span class="sender-name">Placeholder name</span>
+					<span class="message-time">Placeholder time</span>
+				</div>
+			</article>
+		</template>
+
+		<template id="template-message-out">
+			<article class="message right">
+				<div class="message-text">Placeholder message</div>
+				<div class="message-info">
+					<span class="message-time">Placeholder time</span>
+				</div>
+			</article>
+		</template>
+
+		<script type="module" src="main.js"></script>
+	</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" href="/public/3.4.6/favicon.ico" />
+		<link rel="stylesheet" href="styles.css?rnd=12345" />
+		<title>iReggae Chat</title>
+	</head>
+	<body>
+		<div class="container">
+
+      <!-- register new clients page -->
+
+			<header>
+				<h1>iReggae Chat</h1>
+			</header>
+
+			<main>
+				<section class="message-container spawn">
+					<label>Register 2+ clients (for demo)</label>
+					<input
+						placeholder="your nickname..."
+						autocomplete="off"
+						class="textarea"
+						type="text"
+						id="message-spawn"
+					/>
+					<button type="submit" class="send-button" id="submit-spawn">Start</button>
+				</section>
+			</main>
+		</div>
+		<script type="module" src="./util/spawn-client.js"></script>
+	</body>
+</html>

@@ -1,0 +1,189 @@
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #1e1e1e;
+}
+
+header {
+  background-color: #f6c81d;
+  padding: 6px;
+  text-align: center;
+  opacity: 0.7;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  margin: 5vh auto;
+  background-image: url(public/reggae-g96ee60695_640.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 6px solid rgb(178, 31, 31);
+  outline: 6px solid #f6c81d;
+  outline-offset: 6px;
+  border-radius: 2px;
+}
+
+.groove {
+  animation: music 0.75s ease-in 0s infinite alternate;
+}
+
+.message-container {
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  overflow-y: scroll;
+  opacity: 0.9;
+}
+
+.message {
+  background-color: rgba(255, 255, 255, 0.964);
+  border-radius: 6px;
+  padding: 10px;
+  margin-bottom: 10px;
+  max-width: 70%;
+  color: rgb(0, 0, 0);
+  transition: transform 0.3s ease;
+  min-width: 33%;
+}
+
+.left {
+  align-self: flex-start;
+  background-color: #e6e0e0f9;
+  transform: translateX(-30px);
+}
+
+.right {
+  align-self: flex-end;
+  transform: translateX(30px);
+}
+
+.slide-in {
+  transform: translateX(0);
+}
+
+.message-text {
+  font-size: 1em;
+}
+
+.message-info {
+  font-size: 12px;
+  color: #494949;
+  margin-top: 5px;
+}
+
+.sender-name {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: rgba(45, 55, 206, 0.807);
+}
+
+.message-time {
+}
+
+.input-container {
+  display: flex;
+  padding-top: 10px;
+}
+
+.textarea {
+  border: none;
+  height: 35px;
+  border-radius: 6px;
+  padding: 5px 10px;
+  font-size: 16px;
+  margin-right: 10px;
+  resize: none;
+  overflow: hidden;
+  font-family: "Roboto", sans-serif;
+}
+
+.textarea:focus {
+  outline: none;
+}
+
+.send-button {
+  background-color: #296330;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 5px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 90px;
+}
+
+.send-button:hover {
+  font-weight: 600;
+}
+
+#register {
+  display: inherit;
+  width: 100px;
+  margin: 0 auto;
+}
+
+.spawn {
+  display: inherit;
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #1a1a1aec;
+  color: rgb(21, 21, 21);
+}
+
+label {
+  color: rgb(253, 253, 253);
+  margin-top: 30px;
+  margin-bottom: 0px;
+  font-size: 14px;
+  border-radius: 6px;
+  text-align: center;
+  font-style: italic;
+  
+}
+
+#submit-spawn {
+  background-color: #296330;
+  color: white;
+  margin-top: 15px;
+}
+
+#message-spawn {
+  background-color: #bbbe29;
+  color: rgb(18, 18, 18);
+  margin-top: 15px;
+}
+
+#head {
+  margin-bottom: 0;
+}
+
+#subhead {
+  font-size: 12px;
+  color: rgb(25, 25, 25);
+  margin: 5px 0px;
+  font-style: italic;
+}
+
+@keyframes music {
+  0% {
+    transform: scale(1) rotate(0deg);
+  }
+  50% {
+    transform: scale(1.02) rotate(0.6deg);
+  }
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
+}
