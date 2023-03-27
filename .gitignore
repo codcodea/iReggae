@@ -1,5 +1,7 @@
 /server/node_modules
-.DS_Store
 /server/.DS_Store
+
 /client/.DS_Store
+
 .gitignore
+.DS_Store
