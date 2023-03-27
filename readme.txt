@@ -1,4 +1,7 @@
 
+
+iReggae chat client:
+
 To run a demo:
 1. navigate to /server
 2. npm install
@@ -6,9 +9,8 @@ To run a demo:
  
 http://localhost:3020/register
 
-iReggae chat
-- /server folder holds an express server and entry point to spawn chat clients
-- /client folder holds the client side code
+/server folder holds an express server and entry point to spawn chat clients
+/client folder holds the client side code
 
 
 
