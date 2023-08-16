@@ -1,6 +1,5 @@
 const store = require("../store");
 
-// Message handler
 const message = (ws, req) => {
   
   const { id } = req.params;

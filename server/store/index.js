@@ -2,14 +2,14 @@
 class ClientStore {
 	constructor() {
 
-		// Will store clients in a Map
+		// Will store chat clients in a Map
 		this.clients = new Map();
 
 		// Bind this to methods
 		this.setClient = this.setClient.bind(this);
 	}
 
-	// Forward message to all clients
+	// Forward a new message to all clients
 	sendToAll(msg) {
 		this.clients.forEach((client) => client.send(msg));
 	}
