@@ -3,7 +3,6 @@
   Method to spawn a new clients.
 */
 
-
 const spawn = document.querySelector("#submit-spawn");
 const nickname = document.querySelector("#message-spawn");
 
