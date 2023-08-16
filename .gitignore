@@ -1,5 +1,4 @@
-/server/node_modules
-/server/.DS_Store
-
-/client/.DS_Store
 .DS_Store
+server/node_modules
+server/.DS_Store
+client/.DS_Store
